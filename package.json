@@ -7,7 +7,7 @@
     "dev": "wrangler dev --ip 0.0.0.0",
     "deploy": "wrangler deploy",
     "check": "wrangler deploy --dry-run",
-    "test": "node tests/smoke.mjs"
+    "test": "node --test tests/worker.test.mjs && node tests/smoke.mjs && node tests/lead-form.mjs"
   },
   "devDependencies": {
     "@fontsource/hind-siliguri": "5.3.0",

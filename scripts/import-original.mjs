@@ -52,7 +52,7 @@ let html = $.html()
   .replaceAll('https://maissaudehospitalar.com/', '/')
   .replaceAll('https:\\/\\/maissaudehospitalar.com\\/', '\\/')
   .replaceAll('https://cdnjs.cloudflare.com/', '/vendor/cdnjs/');
-html = html.replace('</head>', '<link rel="stylesheet" href="/fonts/fonts.css">\n</head>');
+html = html.replace('</head>', '<link rel="stylesheet" href="/fonts/fonts.css">\n<link rel="stylesheet" href="/lead-form.css">\n<script defer src="/lead-config.js"></script>\n<script defer src="/lead-form.js"></script>\n</head>');
 await writeFile(path.join(out, 'index.html'), html);
 await mkdir(path.join(out, 'fonts'), { recursive: true });
 let fontCSS = '';
