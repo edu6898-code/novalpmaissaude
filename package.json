@@ -1,0 +1,20 @@
+{
+  "name": "mais-saude-lp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --ip 0.0.0.0",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run",
+    "test": "node tests/smoke.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/hind-siliguri": "5.3.0",
+    "@fontsource/poppins": "5.3.0",
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "cheerio": "1.2.0",
+    "playwright": "1.64.1",
+    "wrangler": "4.151.1"
+  }
+}
